@@ -8,32 +8,30 @@ tutorial](https://web.archive.org/web/20160708171659/http://cli.learncodethehard
 ###Q1.  Cheat Sheet of Commands  
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
-
-cd ../../otherdirectory navigates up directories to specific folders 	
-mkdir makes a new directory
-touch creates a new empty file with specified name
-cat file1.txt >> file2.txt appends standard output of file1 to file2
-sort file.txt uniq only gives the unique members sorted
-grep Word file.txt prints instances including Word within file, -i option is case insensitive
-grep –R Word dir/dir looks recursively for Word anywhere in the directory, -Rl option to only give file names and not instances of Word
-sed ‘s/word1/word2/g’ file.txt replaces every instance of word1 in every line with word2
-alias function2="function1" allows you to type function2 for the function1 command
-nano file.txt opens a new text file within nano
+ 
+`cd ../../otherdirectory` navigates up directories to specific folders 	
+`mkdir` makes a new directory  
+`touch` creates a new empty file with specified name  
+`cat file1.txt >> file2.txt` appends standard output of file1 to file2  
+`sort file.txt uniq` only gives the unique members sorted  
+`grep Word file.txt` prints instances including Word within file, -i option is case insensitive  
+`grep –R Word dir/dir` looks recursively for Word anywhere in the directory, -Rl option to only give file names and not instances of Word  
+`sed ‘s/word1/word2/g’` file.txt replaces every instance of word1 in every line with word2  
+`alias function2="function1"` allows you to type function2 for the function1 command  
+`nano file.txt` opens a new text file within nano  
 
 ---
 
 ###Q2.  List Files in Unix   
 
 What do the following commands do:  
-`ls      displays contents of a directory`
-`ls -a`   displays all contents of a directory, including hidden ones
-`ls -l`   displays contents of a directory in long format
-`ls -lh`  displays contents of a directory in long format with file sizes in K/M, etc format 
+`ls`      displays contents of a directory  
+`ls -a`   displays all contents of a directory, including hidden ones  
+`ls -l`   displays contents of a directory in long format  
+`ls -lh`  displays contents of a directory in long format with file sizes in K/M, etc format  
 `ls -lah` displays all contents of a directory in long format with file sizes in K/M, etc format  
-`ls -t`   displays contents of a directory sorted by most recently edited
+`ls -t`   displays contents of a directory sorted by most recently edited  
 `ls -Glp` displays contents of a directory in long format with a / at the end of each and color coding for directories and files 
-
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
 
 ---
 
