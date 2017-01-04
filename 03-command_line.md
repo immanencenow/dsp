@@ -25,7 +25,7 @@ nano file.txt opens a new text file within nano
 ###Q2.  List Files in Unix   
 
 What do the following commands do:  
-`ls`      displays contents of a directory
+`ls      displays contents of a directory`
 `ls -a`   displays all contents of a directory, including hidden ones
 `ls -l`   displays contents of a directory in long format
 `ls -lh`  displays contents of a directory in long format with file sizes in K/M, etc format 
