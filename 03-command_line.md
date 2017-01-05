@@ -52,7 +52,7 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 What does `xargs` do? Give an example of how to use it.
 
 `xargs` passes a list of arguments to another command.  
-one example of using it is `find . -name '*.txt' | xargs grep 'word1'` which will find all files that contain the string `wordq`
+one example of using it is `find . -name '*.txt' | xargs grep 'word1'` which will find all files that contain the string `word1`
 
  
 
