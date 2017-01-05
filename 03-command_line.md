@@ -39,8 +39,11 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
--m	Displays the names as a comma-separated list. (could be useful for 
-
+`-m`	Displays the names as a comma-separated list. (could be useful for lists, dictionaries etc. in Python)  
+`-u`	Displays files by the file access time  
+`-r`	Displays files in reverse order  
+`-g`	Displays the long format listing, but exclude the owner name
+`-o`	Displays the long format listing, but excludes group name.
 
 ---
 
@@ -48,7 +51,8 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+`xargs` passes a list of arguments to another command.  
+one example of using it is `find . -name '*.txt' | xargs grep 'word1'` which will find all files that contain the string `wordq`
 
  
 
