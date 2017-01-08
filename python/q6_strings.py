@@ -10,66 +10,37 @@ def donuts(count):
         return 'Number of donuts: %d' % count
     else:
         return 'Number of donuts: many'
-2. 
+2.  
     
 def both_ends(s):
     if len(s)>1:
         return s[0:2]+s[-2:]
     else:
         return ''
-
+3.  
+    
 def fix_start(s):
-    """
-    Given a string s, return a string where all occurences of its
-    first char have been changed to '*', except do not change the
-    first char itself. e.g. 'babble' yields 'ba**le' Assume that the
-    string is length 1 or more.
-
-    >>> fix_start('babble')
-    'ba**le'
-    >>> fix_start('aardvark')
-    'a*rdv*rk'
-    >>> fix_start('google')
-    'goo*le'
-    >>> fix_start('donut')
-    'donut'
-    """
-    raise NotImplementedError
-
+    temp = [s[0]]
+    for letter in s[1:]:
+        if letter == s[0]:
+            temp.append('*'),
+        else:
+            temp.append(letter),
+    return (''.join(temp))
+4.  
 
 def mix_up(a, b):
-    """
-    Given strings a and b, return a single string with a and b
-    separated by a space '<a> <b>', except swap the first 2 chars of
-    each string. Assume a and b are length 2 or more.
+    return b[0:2] + a [2:] + ' ' + a[0:2] + b[2:]
 
-    >>> mix_up('mix', 'pod')
-    'pox mid'
-    >>> mix_up('dog', 'dinner')
-    'dig donner'
-    >>> mix_up('gnash', 'sport')
-    'spash gnort'
-    >>> mix_up('pezzy', 'firm')
-    'fizzy perm'
-    """
-    raise NotImplementedError
-
+5. 
 
 def verbing(s):
-    """
-    Given a string, if its length is at least 3, add 'ing' to its end.
-    Unless it already ends in 'ing', in which case add 'ly' instead.
-    If the string length is less than 3, leave it unchanged. Return
-    the resulting string.
-
-    >>> verbing('hail')
-    'hailing'
-    >>> verbing('swiming')
-    'swimingly'
-    >>> verbing('do')
-    'do'
-    """
-    raise NotImplementedError
+    if len(s)<3:
+        return s
+    elif s[-3:] == 'ing':
+        return s + 'ly'
+    else:
+        return s + 'ing'  
 
 
 def not_bad(s):
