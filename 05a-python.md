@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+Lists and tuples are similar in that they are collections of elements with no key attached (unlike a dictionary).  They are different, however, in that lists are mutable whereas tuples are not (you cannot sort and reverse them).  Tuples will work as keys in dictionaries because they are hashed by their contents, whereas lists are not.
 
 ---
 
