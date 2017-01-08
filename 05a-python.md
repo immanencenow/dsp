@@ -31,13 +31,9 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 The `lambda` is used to write an anonymous function (unlike the `def` method which creates a named one), which is used as an argument in higher order functions.  
 
-An example for the `key` argument to `sorted` is to sort a list of tuples by a particular element
+An example for the `key` argument to `sorted` is to sort a list where the elements are tuples by a particular element of those tuples
 
-list_tuples = [  
-        ('b', 'P', 3),  
-        ('c', 'D', 2),  
-        ('d', 'B', 1),  
-]  
+list_tuples = [('b', 'P', 3), ('c', 'D', 2), ('d', 'B', 1),]  
 
 sorted(list_tuples, key=lambda elem: elem[2])  
 
@@ -51,9 +47,46 @@ gives the following output:
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+List comprehensions are ways of more simply creating lists from conditions (in order to forego using loops).  
+
+An example is 
+
+list1 = [1, 2, 3]  
+new_list = [x - 2 for x in list1]  
+new_list  
+which results in  
+[-1, 0, 1]  
+ 
+To do this with map one would do the following:
+
+list1 = [1, 2, 3]  
+new_list = list(map(lambda x: x-2, list1))  
+new_list  
+
+`Filter` cuts down a list to the elements where a function returns `True`.  There is no equivalent to the above functions, however, one coud do something like 
+
+list1 = [1, 2, 3]  
+new_list = list(filter(lambda x: x>1, list1))   
+new_list  
+
+which would return  
+
+[2, 3]  
+
+List comprehensions are more readable and concise seem to be more widely used than `map` or `filter` but the latter two are more powerful.  
+
+Set comprehension is similar to list comprehension.  An example that gives the same results as the list comprehension and `map` examples above is:
+
+set1 = {x-2 for x in range (1,4)}  
+set1
+
+Dictionary comprehension to create a dictionary for a similar result is:  
+dict1 = {x: x-2 for x in range(1,4)}  
+dict1  
+
 
 ---
+
 
 ###Complete the following problems by editing the files below:
 
