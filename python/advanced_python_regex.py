@@ -27,3 +27,8 @@ faculty = pd.read_csv('faculty.csv')
 emails = faculty['email'].tolist()
 emails
 
+import pandas as pd
+faculty = pd.read_csv('faculty.csv')
+faculty['email'] = faculty['email'].apply(lambda x: x.split('@', 1)[-1])
+faculty = faculty.groupby(['email']).size()
+print faculty.index.tolist()
